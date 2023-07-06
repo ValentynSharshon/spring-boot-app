@@ -1,0 +1,1 @@
+CREATE DATABASE IF NOT EXISTS spring_web_blog CHAR SET utf8mb4 COLLATE utf8mb4_general_ci;
