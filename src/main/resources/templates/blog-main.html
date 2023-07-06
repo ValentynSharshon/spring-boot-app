@@ -7,12 +7,17 @@
     </head>
 
     <body>
-        <header th:insert="fragments/header :: header"></header>
+        <header th:insert="~{fragments/header :: header}"></header>
 
         <div class="container mt-5">
             <h1 th:text="${title}"></h1>
+            <div th:each="element : ${posts}" class="alert alert-info mt-2">
+                <h3 th:text="${element.title}"/>
+                <p th:text="${element.anons}"/>
+                <a th:href="'/blog/' + ${element.id}">Details</a>
+            </div>
         </div>
 
-        <footer th:insert="fragments/footer :: footer"></footer>
+        <footer th:insert="~{fragments/footer :: footer}"></footer>
     </body>
 </html>

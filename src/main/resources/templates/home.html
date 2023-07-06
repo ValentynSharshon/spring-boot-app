@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <header th:insert="fragments/header :: header"></header>
+        <header th:insert="~{fragments/header :: header}"></header>
 
         <main>
             <section class="py-5 text-center container">
@@ -174,6 +174,6 @@
             </div>
         </main>
 
-        <footer th:insert="fragments/footer :: footer"></footer>
+        <footer th:insert="~{fragments/footer :: footer}"></footer>
     </body>
 </html>
